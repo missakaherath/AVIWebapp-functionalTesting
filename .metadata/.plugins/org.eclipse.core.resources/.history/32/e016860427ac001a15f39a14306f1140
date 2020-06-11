@@ -1,0 +1,23 @@
+package functionalTesting;
+
+public class seleniumTestMain {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		addNewAdmin addAdmin = new addNewAdmin();
+		addNewGenUser addGenUser = new addNewGenUser();
+		SearchBlockedVehicles searchBlockedVehicles = new SearchBlockedVehicles();
+		
+		System.setProperty("webdriver.chrome.driver", "F:\\softwares\\new selenium\\exefiles\\chromedriver.exe");
+		
+		//adding an admin
+//		addAdmin.testAddAdmin();
+		
+		//adding a gen user
+//		addGenUser.testAddGenUser();
+		
+		//search a blocked vehicle
+		searchBlockedVehicles.testSearchABlockedVehicle();
+	}
+
+}

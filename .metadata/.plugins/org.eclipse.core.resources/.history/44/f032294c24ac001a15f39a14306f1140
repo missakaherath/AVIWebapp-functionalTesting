@@ -1,0 +1,14 @@
+package functionalTesting;
+
+public class seleniumTestMain {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		addNewAdmin addAdmin = new addNewAdmin();
+		
+		System.setProperty("webdriver.chrome.driver", "F:\\softwares\\new selenium\\exefiles\\chromedriver.exe");
+		
+		addAdmin.testAddAdmin();
+	}
+
+}
